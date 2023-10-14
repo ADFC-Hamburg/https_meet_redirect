@@ -16,7 +16,7 @@ jobs:
       contents: read
       packages: write
     env:
-      imageName: ghcr.io/adfc-hamburg/${{ env.IMAGE_NAME }}
+      imageName: ghcr.io/adfc-hamburg/${{github.repository }}
       tag: ${{ github.ref_name }}
     steps:
     - name: Checkout repository
