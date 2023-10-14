@@ -1,0 +1,38 @@
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="adfc.css" media="all">
+    <title>Neue Seite für das Jitsi-Meet</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    </head>
+  <body>
+    <h1>Allgemeiner Deutscher Fahrrad-Club e.V. (ADFC)</h1>
+    <img src="adfc.png" alt="ADFC Logo">
+    <div class="bar"></div>
+    <div class="datum">Hamburg, 1.10.23</div>
+    <div class="txt">Dieses Meet System wurde vom ADFC Hamburg aus der Not heraus wegen der Covid-Pandemie für verschiedene Bundesverbände ehrenamtlich zur Verfügung gestellt. Wir freuen uns, dass jetzt der ADFC (Bundesverband) eine neue Lösung professionell betreut und für alle ADFC Gliederungen kostenlos zur Verfügung stellt. 
+      </div>
+    <div class="txt">Wir stellen deshalb diese alte Lösung ein. Bitte aktualisiere deinen Adresseintrag zu:</div>
+    <div class="txt"><a href=https://meet.adfc.de/>https://meet.adfc.de</a></div> 
+        <div class="txt">Sofern du mit einem direkten Link zu einer Konferenz auf dieser Seite gelandet bist, und wenn der Name deiner Konferenz auch auf dem neuen System unverändert ist, könnte auch diese Adresse jetzt direkt dorthin führen:</div>
+    <div class="txt"><a id="newurl"></a></div> 
+        <div class="txt">Wir werden diese Informationsseite sp&auml;testens am 01.06.24 abschalten!!</div>
+      <div class="footer">
+	<a href="https://hamburg.adfc.de/impressum">Impressum</a> |
+	<a href="https://hamburg.adfc.de/datenschutz">Datenschutz</a>
+	</div>
+  </body>
+  <script>
+    const currentUrl = window.location.href;
+    var newUrl=currentUrl.replace('meet.adfc-intern.de','meet.adfc.de')
+    var ele=document.getElementById('newurl');
+    ele.innerHTML=newUrl;
+    ele.href=newUrl;
+  </script>
+</html>

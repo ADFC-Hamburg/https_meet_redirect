@@ -1,0 +1,29 @@
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="adfc.css" media="all">
+    <title>Neue Seite für das Jitsi-Meet</title>
+    </head>
+  <body>
+    <h1>Allgemeiner Deutscher Fahrrad-Club e.V. (ADFC)</h1>
+    <img src="adfc.png" alt="ADFC Logo">
+    <div class="bar"></div>
+    <div class="datum">Hamburg, 1.10.23</div>
+    <div class="txt">Dieses Meet System wurde vom ADFC Hamburg aus der Not heraus wegen der Coivd Pandemie für verschiedene Bundesverbände ehrenamtlich zur Verfügung gestellt. Wir freuen uns, dass jetzt der Bundesverband eine neue Lösung professionell betreut und für alle ADFC Gliederungen kostenlos zur Verfügung stellt. 
+      </div>
+    <div class="txt">Wir stellen deshalb diese alte Lösung ein. Bitte aktualisiert eure Addresse zu:</div>
+    <div class="txt"><a id="newurl"></a></div>
+        <div class="txt">Wir werden diese Weiterleitung sp&auml;testens am 01.06.24 abschalten!!</div>
+      <div class="footer">
+	<a href="https://hamburg.adfc.de/impressum">Impressum</a> |
+	<a href="https://hamburg.adfc.de/datenschutz">Datenschutz</a>
+	</div>
+  </body>
+  <script>
+    const currentUrl = window.location.href;
+    var newUrl=currentUrl.replace('meet.adfc-intern.de','meet.adfc.de')
+    var ele=document.getElementById('newurl');
+    ele.innerHTML=newUrl;
+    ele.href=newUrl;
+  </script>
+</html>
